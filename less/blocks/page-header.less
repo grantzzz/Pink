@@ -1,0 +1,138 @@
+.page-header {
+
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin-bottom: -70px;
+    z-index: 100;
+
+
+}
+
+.page-header__wrapper {
+  padding: 0;
+}
+
+.page-header__logo {
+  margin-left: 20px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.page-header__logo-svg:hover, .page-header__logo-svg-tablet:hover, .page-header__logo-svg-desktop:hover {
+  path {
+  fill: #d22856;
+  }
+}
+.page-header__logo:active {
+  opacity: 0.3;
+  path {
+  fill: #fff;
+  }
+}
+.page-header__logo-svg-tablet, .page-header__logo-svg-desktop {
+  display: none;
+}
+.page-header__toggler {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  height: 25px;
+  width: 50px;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &:hover {
+      path {
+        fill: #d22856;
+      }
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  svg:nth-child(2) {
+    left: 30%;
+    display: none;
+  }
+
+  }
+
+.page-header__inner {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.page-header__input-toggler {
+  display: none;
+
+  &:checked + .page-header__toggler {
+     svg:nth-child(1) {
+    display: none;
+  }
+  svg:nth-child(2) {
+    display: block;
+  }
+
+  }
+
+
+
+  &:checked ~ .main-nav {
+    display: block;
+  }
+  &:checked ~ .page-header__inner {
+  background-color: #243344;
+}
+}
+
+@media @tablet-widths {
+  .page-header__logo {
+    width: 660px;
+
+  }
+  .page-header__logo-svg, .page-header__logo-svg-desktop {
+  display: none;
+}
+.page-header__logo-svg-tablet {
+  display: block;
+}
+  .page-header__toggler {
+    top: 50px;
+
+  }
+  .page-header {
+    margin-bottom: -120px;
+  }
+  .page-header__inner {
+    padding: 20px 0;
+  }
+}
+@media @desktop-widths  {
+
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .page-header__toggler {
+    display: none;
+  }
+  .page-header__wrapper {
+    .container;
+    display: flex;
+    justify-content: center;
+ }
+ .page-header__inner {
+  background-color: transparent;
+}
+ .page-header__logo {
+  width: 320px;
+  position: relative;
+  top: -10px;
+ }
+ .page-header__logo-svg, .page-header__logo-svg-tablet {
+  display: none;
+  }
+.page-header__logo-svg-desktop {
+  display: block;
+  }
+}
+

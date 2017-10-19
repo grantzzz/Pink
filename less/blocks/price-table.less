@@ -1,0 +1,239 @@
+.price-table
+{
+  border-collapse: collapse;
+  border: 2px solid #e6e6e6;
+  background-color: #f3f3f3;
+  width: 100%;
+  svg {
+    float: right;
+    margin-right: 30px;
+  }
+
+
+}
+.price-table__no {
+  fill: #f35b21;
+}
+.price-table__yes {
+  fill: #3bc743;
+}
+.price-table__version {
+    td {
+      background-color: #243344;
+      width: 280px;
+      padding: 25px 0;
+      position: relative;
+      border: 2px solid #e5e5e5;
+      overflow: hidden;
+    }
+
+}
+.price-table__version-title
+{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.price-table__cost
+{
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+.price-table__filter
+{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: #fff;
+    position: relative;
+
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    border: 2px solid #e5e5e5;
+
+}
+.price-table__smilies
+{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+
+    position: relative;
+    background-color: #fff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    border: 2px solid #e5e5e5;
+}
+.price-table__comments
+{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+
+    position: relative;
+    background-color: #fff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    border: 2px solid #e5e5e5;
+}
+.price-table__label
+{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+
+    transform: rotate(-45deg) translate(-25px, -20px);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #d32356;
+}
+.price-table__base-filter
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+.price-table__standard-filter
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+
+.price-table__unlim-filter
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+
+.price-table__base-smilies
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+
+.price-table__standard-smilies
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+
+.price-table__unlim-smilies
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+
+.price-table__base-comments
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+
+.price-table__standard-comments
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+
+.price-table__unlim-comments
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    border: 2px solid #e5e5e5;
+}
+.price-table__blank {
+ visibility: hidden;
+}
+
+@media (max-width: 500px) {
+    .price-table {
+      svg {
+        margin-right: 10px;
+      }
+    }
+}
+@media @tablet-widths {
+  .price-table {
+    width: 100%;
+  }
+  .price-table__base-filter, .price-table__standard-filter, .price-table__unlim-filter, .price-table__base-smilies, .price-table__standard-smilies, .price-table__unlim-smilies, .price-table__base-comments, .price-table__standard-comments, .price-table__unlim-comments {
+    span {
+      display: none;
+    }
+  }
+
+  .price-table {
+  td {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  svg {
+
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    margin-right: 30px;
+    }
+
+
+  }
+  .price-table__left-column {
+    padding-left: 15px;
+    text-transform: none;
+  }
+}

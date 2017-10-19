@@ -1,0 +1,21 @@
+.container() {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+.clearfix() {
+  &:after {
+    display: table;
+    content: "";
+
+    clear: both;
+  }
+}
