@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css"></link>
+    <![endif]-->
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body class="index-page">
@@ -93,34 +97,35 @@
 
     </header>
     <section class="index-intro">
-
         <div class="app">
           <div class="app__wrapper">
             <div class="app__inner">
               <h1 class="app__title">Взгляните<br> на жизнь<br> иначе!</h1>
-              <a class="app__download btn" href="">Скачать приложение</a>
+              <a class="app__download btn" href=""><span>Скачать приложение</span></a>
               <div class="app__platforms-wrapper">
-               <a class="app__apple" href=""></a>
-               <a class="app__android" href=""></a>
-               <a class="app__windows" href=""></a>
+               <a class="app__apple" href="#"></a>
+               <a class="app__android" href="#"></a>
+               <a class="app__windows" href="#"></a>
               </div>
               <p class="app__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
             </div>
         </div>
       </div>
+
+        </div>
     </section>
 
       <section class="features">
           <div class="features__title-wrapper">
-             <h2 class="features__title">Устали от серости мегаполиса?</h2>
-             <h2 class="features__title">Нам есть, что вам<br> предложить!</h2>
+             <h2 class="features__title wow fadeInLeft" data-wow-offset="120">Устали от серости мегаполиса?</h2>
+             <h2 class="features__title wow fadeInRight" data-wow-offset="120">Нам есть, что вам<br> предложить!</h2>
 
               <polygon fill="#fff" points="1200,0 0,0 0,94.074 "/>
             </svg>
           </div>
           <div class="features__bg">
             <div class="features__wrapper">
-               <div class="features__inner">
+               <div class="features__inner wow zoomIn" data-wow-offset="400">
                  <div class="features__item">
                    <h3 class="features__item-title">Поднимает настроение</h3>
                    <p class="features__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -137,7 +142,9 @@
            </div>
           </div>
          <div class="features__effect-wrapper">
-            <div class="features__effect-inner">
+            <div class="features__effect-inner" data-wow-offset="300">
+                <span class="timer"><span class="dot"></span></span>
+
                <div class="features__effect">
                  <h2>Эффект на 24 часа!</h2>
 
@@ -146,7 +153,7 @@
                   от использования приложения длится
                   целые сутки!</p>
 
-                  <a href="#">Узнать больше об исследовании</a>
+                  <a href="#"><span>Узнать больше об исследовании</span></a>
                </div>
              </div>
           </div>
@@ -194,7 +201,7 @@
               <label for="price-pagination-control-3" class="price__paginator-3"></label>
 
           <div class="price__wrapper">
-            <table class="price-table">
+            <table class="price-table wow flipInX" data-wow-offset="120">
 
 
 
@@ -279,7 +286,7 @@
       </section>
       <section class="feedback">
         <div class="feedback__wrapper">
-          <h2 class="feedback__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+          <h2 class="feedback__title wow fadeInDown" data-wow-offset="200">Остались вопросы?<br>Свяжитесь с нами!</h2>
           <div class="feedback__item">
             <div class="feedback__item-title">Звоните:</div>
             <div class="feedback__item-info">+7 (812) 555-66-66</div>
@@ -297,7 +304,7 @@
 
       </section>
       <section class="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af50bb342d25480d96dc4205a003f40a3d0f903b3e2db28aa1cf610ec12190592&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af50bb342d25480d96dc4205a003f40a3d0f903b3e2db28aa1cf610ec12190592&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
       </section>
       <footer class="index-footer">
         <div class="index-footer__wrapper">
@@ -374,5 +381,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+              new WOW().init();
+    </script>
   </body>
 </html>

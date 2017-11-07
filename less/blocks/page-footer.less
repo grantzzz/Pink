@@ -8,8 +8,8 @@
 .page-footer__logo
 {
     margin-bottom: 40px;
-
     text-align: center;
+    transition: 0.4s;
     &:hover {
       cursor: pointer;
       svg path {
@@ -36,16 +36,24 @@
       display: inline-block;
       vertical-align: middle;
       position: relative;
+      transition: 0.4s;
+      &:nth-child(2) svg {
+        left: 40%;
+      }
     svg {
       position: absolute;
       top: 30%;
-      left: 38%;
+      left: 35%;
+
       path {
         fill: #d32557;
       }
+
     }
       &:hover {
         border: 3px solid #243344;
+        transform: scale(1.2);
+
       }
       &:active {
         opacity: 0.3;

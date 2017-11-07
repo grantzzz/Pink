@@ -1,7 +1,7 @@
 .price-table
 {
   border-collapse: collapse;
-  border: 2px solid #e6e6e6;
+  outline: 1px solid #F3F3F3;
   background-color: #f3f3f3;
   width: 100%;
   svg {
@@ -23,7 +23,7 @@
       width: 280px;
       padding: 25px 0;
       position: relative;
-      border: 2px solid #e5e5e5;
+      outline: 1px solid #F3F3F3;
       overflow: hidden;
     }
 
@@ -65,7 +65,7 @@
     vertical-align: middle;
     text-transform: uppercase;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 
 }
 .price-table__smilies
@@ -80,7 +80,7 @@
     vertical-align: middle;
     text-transform: uppercase;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 .price-table__comments
 {
@@ -94,7 +94,7 @@
     vertical-align: middle;
     text-transform: uppercase;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 .price-table__label
 {
@@ -122,7 +122,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 .price-table__standard-filter
 {
@@ -130,7 +130,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 
 .price-table__unlim-filter
@@ -139,7 +139,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 
 .price-table__base-smilies
@@ -148,7 +148,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 
 .price-table__standard-smilies
@@ -157,7 +157,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 
 .price-table__unlim-smilies
@@ -166,7 +166,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+   outline: 1px solid #F3F3F3;
 }
 
 .price-table__base-comments
@@ -175,7 +175,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 
 .price-table__standard-comments
@@ -184,7 +184,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 
 .price-table__unlim-comments
@@ -193,7 +193,7 @@
     padding-bottom: 25px;
     padding-left: 25px;
 
-    border: 2px solid #e5e5e5;
+    outline: 1px solid #F3F3F3;
 }
 .price-table__blank {
  visibility: hidden;
@@ -205,6 +205,7 @@
         margin-right: 10px;
       }
     }
+
 }
 @media @tablet-widths {
   .price-table {
@@ -215,7 +216,19 @@
       display: none;
     }
   }
-
+ .price-table__filter, .price-table__smilies, .price-table__comments  {
+    outline: 1px solid #f3f3f3;
+  }
+  .price-table__blank {
+      position: relative;
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: black;
+      }
+    }
   .price-table {
   td {
     position: relative;

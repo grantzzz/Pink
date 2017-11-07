@@ -34,7 +34,6 @@
 .index-footer__social-links
 {
     margin-bottom: 40px;
-
     text-align: center;
     a {
       margin-right: 10px;
@@ -46,6 +45,8 @@
       display: inline-block;
       vertical-align: middle;
       position: relative;
+      transition: 0.4s;
+
     svg {
       position: absolute;
       top: 30%;
@@ -56,6 +57,7 @@
     }
       &:hover {
         border: 3px solid #243344;
+        transform: scale(1.2);
       }
       &:active {
         opacity: 0.3;
@@ -77,12 +79,14 @@
     text-decoration: none;
     color: #283645;
     position: relative;
+    transition: 0.4s;
     svg {
       position: absolute;
       top: -13px;
       right: -45px;
     }
     &:hover {
+
       svg path {
         fill: #243344;
       }
