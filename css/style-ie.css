@@ -1,0 +1,9 @@
+.main-nav__item a:after {
+        display: none;
+  }
+.main-nav__item a {
+    transition: 0.5s;
+  }
+.main-nav__item a:hover {
+    border-bottom: 1px solid #fff;
+  }
