@@ -2193,6 +2193,9 @@
         order: 1;
   }
 }
+.form {
+  padding-top: 100px;
+}
 .form-intro {
   padding-top: 80px;
   padding-bottom: 25px;
